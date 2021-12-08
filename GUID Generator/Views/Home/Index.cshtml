@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <h3>Please enter your name below:</h3>
+    <form>      
+        <div class="row">
+            <div class="col-sm-2 label-font">
+                <label for="name" class="label-font name" >Name:</label>
+            </div>
+            <div class="col-sm-5">
+                <div class="row">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Type your name here (with no spaces)">
+                </div>
+                <div class="row">
+                        <button name ="button" type="submit" class="btn btn-success btn-lg" asp-action="check">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-sm-2 label-font">
+                <label for="result" class="label-font" >Result:</label>
+            </div>
+            <div class="col-sm-10 label-font">
+                <div class="row">
+                    <!-- <input type="text" class="form-control" id="nameInput" placeholder="Type your name here (with no spaces)"> -->
+                    <label for="name-guid" class="label-font">Result goes here</label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
